@@ -1,0 +1,262 @@
+.create-event-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.create-event-form {
+  display: grid;
+  gap: 15px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.create-event-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.create-event-form input,
+.create-event-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.create-event-form input:focus,
+.create-event-form textarea:focus {
+  border-color: #5cd291;
+  box-shadow: 0 0 8px rgba(92, 210, 145, 0.5);
+  outline: none;
+}
+
+.create-event-form button {
+  padding: 12px;
+  background-color: #5cd291;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: bounceIn 1s ease-in-out;
+}
+
+.create-event-form button:disabled {
+  background-color: #6c757d;
+}
+
+.create-event-form button:hover {
+  background-color: #48a97a;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.create-event-page {
+  background-color: #000; /* Black background */
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.create-event-form {
+  display: grid;
+  gap: 15px;
+  background-color: #fff; /* White box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.create-event-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.create-event-form input,
+.create-event-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.create-event-form button {
+  padding: 12px;
+  background-color: #5cd291;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-event-form button:hover {
+  background-color: #45b977;
+}
+
+.create-event-form button:disabled {
+  background-color: #6c757d;
+}
+
+.success-message,
+.error-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+.create-event-page {
+  background-color: #000; /* Black background */
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.create-event-form {
+  display: grid;
+  gap: 15px;
+  background-color: #fff; /* White box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.create-event-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.create-event-form input,
+.create-event-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #000;
+  width: 100%; /* Make input fields take full width of the container */
+  max-width: 400px; /* Limit the maximum width of input fields */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.create-event-form button {
+  padding: 12px;
+  background-color: #5cd291;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 200px; /* Limit the maximum width of the button */
+}
+
+.create-event-form button:hover {
+  background-color: #45b977;
+}
+
+.create-event-form button:disabled {
+  background-color: #6c757d;
+}
+
+.success-message,
+.error-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+input {
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}

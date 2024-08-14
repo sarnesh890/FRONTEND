@@ -1,0 +1,14 @@
+.dashboard {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dashboard h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard p {
+    font-size: 1.2em;
+  }
+  

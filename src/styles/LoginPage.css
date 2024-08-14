@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e; /* Fallback background color */
+  color: white;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(28, 28, 28, 0.85), rgba(40, 40, 40, 0.85)), 
+              url('../assets/images/background.jpg') no-repeat center center/cover;
+  animation: animeBackgroundMove 15s infinite alternate ease-in-out; /* Background animation */
+}
+
+.login-box {
+  background-color: rgba(36, 36, 36, 0.95); /* Slightly transparent dark background */
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+  border-radius: 12px; /* Slightly more rounded corners */
+  max-width: 400px;
+  width: 100%;
+  animation: fadeInUp 0.8s ease-out; /* Smooth fade-in animation */
+}
+
+h2 {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e6e6e6; /* Slightly lighter text color */
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #c0c0c0; /* Subtle text color */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #e6e6e6;
+  background-color: #2e2e2e; /* Dark input background */
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #007BFF, #0056b3); /* Gradient for button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #0056b3, #007BFF);
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+button[type="submit"]:active {
+  background: linear-gradient(90deg, #003f7f, #0056b3);
+}
+
+p {
+  text-align: center;
+  color: #c0c0c0;
+}
+
+p a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #0056b3;
+}
+
+.success-message {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes animeBackgroundMove {
+  from {
+    background-position: center center;
+  }
+  to {
+    background-position: center top;
+  }
+}

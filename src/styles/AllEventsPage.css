@@ -1,0 +1,70 @@
+/* 
+
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f2efef 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%, #e0e0e0 100%);
+  background-size: 50px 50px;
+  animation: backgroundAnimation 10s linear infinite;
+}
+
+.event-card {
+  background-color: #ffffff;
+  padding: 0px;
+  border: 1px solid #180a0a;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.event-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.event-card p strong {
+  color: #333;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.event-card:hover {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 50px; }
+} */
+.all-events-page {
+  padding: 20px;
+}
+
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
